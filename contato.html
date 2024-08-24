@@ -1,7 +1,8 @@
 <html><head><base href="contato.html">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contato - TechAcessórios</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Contato - Ls Importados</title>
 <style>
     :root {
         --primary-color: #4CAF50;
@@ -125,7 +126,7 @@
 </head>
 <body>
     <header>
-        <h1>TechAcessórios</h1>
+        <h1>Ls Importados</h1>
     </header>
     <nav>
         <ul>
@@ -166,18 +167,15 @@
             <p><strong>E-mail:</strong> 2014gilmário@gmail.com</p>
             <p><strong>Horário de Atendimento:</strong> Terça a Domingo, das 9h às 18h</p>
             
-            <h3>Nossa Localização</h3>
-            <div id="map"></div>
+            <a href="https://www.google.com/maps/dir/-15.4536994,-47.608917/LOCALIZA%C3%87%C3%83O+DA+FEIRA+PERMANENTE+DE+PLANALTINA+GOIAS/@-15.4500598,-47.620183,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x935a6550abff3719:0xbf998c8cd976528a!2m2!1d-47.6157919!2d-15.4506885?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="external" style="text-decoration: none;"><h3>Nossa Localização clique aqui</h3></a> 
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 TechAcessórios. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Ls Importados. Todos os direitos reservados.</p>
     </footer>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 <script>
 function initMap() {
-    const location = { lat: -15.4506888, lng: -47.6157917 }; // Coordenadas da Av. Paulista
+    const location = { lat: -15.4505, lng: -47.6245556 }; // Coordenadas Feira permanente de Planaltina Go
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: location
@@ -185,7 +183,7 @@ function initMap() {
     const marker = new google.maps.Marker({
         position: location,
         map: map,
-        title: 'TechAcessórios'
+        title: 'Ls Importados'
     });
 }
 

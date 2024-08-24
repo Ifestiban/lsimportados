@@ -1,0 +1,262 @@
+<html><head><base href="index.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Ls Importados - Sua Loja de Acessórios Eletrônicos</title>
+<style>
+    :root {
+        --primary-color: #4CAF50;
+        --secondary-color: #333;
+        --background-color: #f4f4f4;
+        --text-color: #333;
+    }
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+    header {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+    nav {
+        background-color: #444;
+        padding: 0.5em;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 1em;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: var(--primary-color);
+    }
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    .hero {
+        background-image: url('https://example.com/hero-image.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin-bottom: 2em;
+    }
+    .hero-content {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2em;
+        border-radius: 8px;
+    }
+    .hero h2 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.75em 1.5em;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #45a049;
+    }
+    .featured-products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2em;
+        margin-top: 2em;
+    }
+    .product-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .product-info {
+        padding: 1em;
+    }
+    .product-title {
+        font-size: 1.2em;
+        margin: 0 0 0.5em 0;
+    }
+    .product-price {
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    footer {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Ls Importados</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="explorar-produto-pag1.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Acessórios Eletrônicos de Última Geração</h2>
+                <p>Descubra nossa seleção de produtos inovadores para aprimorar sua experiência tecnológica.</p>
+                <a href="explorar-produto-pag1.html" class="cta-button">Explorar Produtos</a>
+            </div>
+        </section>
+        <section>
+            <h2>Produtos em Destaque</h2>
+            <div class="featured-products">
+                <div class="product-card">
+                    <img src="carregador-img/51tgED9AkKL._AC_SL1000_.jpg" alt="Carregador sem fio de 15W" width="250" height="200">
+                    <div class="product-info">
+                        <h3 class="product-title">Carregador Sem Fio 15W</h3>
+                        <p class="product-price">R$ 129,99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="fones-img/51XQMs0qUPS._AC_UF1000,1000_QL80_.jpg" alt="Fone de ouvido Bluetooth com cancelamento de ruído" width="250" height="200">
+                    <div class="product-info">
+                        <h3 class="product-title">Fone Bluetooth com ANC</h3>
+                        <p class="product-price">R$ 299,99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="relogio/smatchatch.png" alt="Smartwatch com monitor cardíaco" width="250" height="200">
+                    <div class="product-info">
+                        <h3 class="product-title">Smartwatch Fitness</h3>
+                        <p class="product-price">R$ 399,99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="acessorios/supower bank.png" alt="Powerbank de 20000mAh" width="250" height="200">
+                    <div class="product-info">
+                        <h3 class="product-title">Powerbank 20000mAh</h3>
+                        <p class="product-price">R$ 179,99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ls Importados. Todos os direitos reservados.</p>
+    </footer>
+
+
+<script>
+// Animação suave para o botão CTA
+const ctaButton = document.querySelector('.cta-button');
+ctaButton.addEventListener('mouseover', function() {
+    this.style.transform = 'scale(1.05)';
+});
+ctaButton.addEventListener('mouseout', function() {
+    this.style.transform = 'scale(1)';
+});
+
+// Lazy loading para imagens
+document.addEventListener("DOMContentLoaded", function() {
+    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    let active = false;
+
+    const lazyLoad = function() {
+        if (active === false) {
+            active = true;
+
+            setTimeout(function() {
+                lazyImages.forEach(function(lazyImage) {
+                    if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazy");
+
+                        lazyImages = lazyImages.filter(function(image) {
+                            return image !== lazyImage;
+                        });
+
+                        if (lazyImages.length === 0) {
+                            document.removeEventListener("scroll", lazyLoad);
+                            window.removeEventListener("resize", lazyLoad);
+                            window.removeEventListener("orientationchange", lazyLoad);
+                        }
+                    }
+                });
+
+                active = false;
+            }, 200);
+        }
+    };
+
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+});
+
+// Animação de entrada para os cards de produto
+const productCards = document.querySelectorAll('.product-card');
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+productCards.forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(card);
+});
+</script>
+
+</body></html>

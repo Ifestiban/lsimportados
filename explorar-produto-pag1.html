@@ -1,0 +1,286 @@
+<html><head><base href="explorar-produto-pag1.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Produtos - Ls Importados</title>
+<style>
+    :root {
+        --primary-color: #4CAF50;
+        --secondary-color: #333;
+        --background-color: #f4f4f4;
+        --text-color: #333;
+    }
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+    header {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+    nav {
+        background-color: #444;
+        padding: 0.5em;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 1em;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: var(--primary-color);
+    }
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2em;
+    }
+    .product-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .product-info {
+        padding: 1em;
+    }
+    .product-title {
+        font-size: 1.2em;
+        margin: 0 0 0.5em 0;
+    }
+    .product-price {
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .product-description {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+    .filters {
+        margin-bottom: 2em;
+    }
+    .filter-button {
+        background-color: #ddd;
+        border: none;
+        padding: 0.5em 1em;
+        margin-right: 0.5em;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .filter-button:hover, .filter-button.active {
+        background-color: var(--primary-color);
+        color: white;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .pagination button {
+        background-color: #ddd;
+        border: none;
+        padding: 0.5em 1em;
+        margin: 0 0.25em;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .pagination button:hover, .pagination button.active {
+        background-color: var(--primary-color);
+        color: white;
+    }
+    footer {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Ls Importados</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="explorar-produto-pag1.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nossos Produtos</h2>
+        <div class="filters">
+            <button class="filter-button active" data-category="todos">Todos</button>
+            <button class="filter-button" data-category="carregadores">Carregadores</button>
+            <button class="filter-button" data-category="fones">Fones de Ouvido</button>
+            <button class="filter-button" data-category="smartwatches">Smartwatches</button>
+            <button class="filter-button" data-category="acessorios">Acessórios</button>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="carregadores">
+                <img src="carregador-img/carregador2.jpg" alt="Carregador sem fio de 15W" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Carregador Sem Fio 15W</h3>
+                    <p class="product-price">R$ 129,99</p>
+                    <p class="product-description">Carregamento rápido e sem fios para dispositivos compatíveis.</p>
+                </div>
+            </div>
+            <div class="product-card" data-category="fones">
+                <img src="fones-img/Sem título.jpg" alt="Fone de ouvido Bluetooth com cancelamento de ruído" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Fone Bluetooth com ANC</h3>
+                    <p class="product-price">R$ 299,99</p>
+                    <p class="product-description">Áudio de alta qualidade com cancelamento de ruído ativo.</p>
+                </div>
+            </div>
+            <div class="product-card" data-category="smartwatches">
+                <img src="relogio/smatchatch1.png" alt="Smartwatch com monitor cardíaco" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Smartwatch Fitness</h3>
+                    <p class="product-price">R$ 399,99</p>
+                    <p class="product-description">Monitore sua saúde e atividades físicas com estilo.</p>
+                </div>
+            </div>
+            <div class="product-card" data-category="acessorios">
+                <img src="acessorios/supower bank.png" alt="Powerbank de 20000mAh" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Powerbank 20000mAh</h3>
+                    <p class="product-price">R$ 179,99</p>
+                    <p class="product-description">Carregue seus dispositivos em qualquer lugar com esta bateria portátil de alta capacidade.</p>
+                </div>
+            </div>
+            <div class="product-card" data-category="carregadores">
+                <img src="carregador-img/51tgED9AkKL._AC_SL1000_.jpg" alt="Carregador rápido USB-C" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Carregador Rápido USB-C</h3>
+                    <p class="product-price">R$ 89,99</p>
+                    <p class="product-description">Carregamento ultra-rápido para dispositivos USB-C.</p>
+                </div>
+            </div>
+            <div class="product-card" data-category="fones">
+                <img src="fones-img/51XQMs0qUPS._AC_UF1000,1000_QL80_.jpg" alt="Fone de ouvido esportivo à prova d'água" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Fone Esportivo À Prova D'água</h3>
+                    <p class="product-price">R$ 149,99</p>
+                    <p class="product-description">Ideal para atividades físicas, resistente à água e suor.</p>
+                </div>
+            </div>
+            <div class="product-card" data-category="acessorios">
+                <img src="acessorios/suporte celular.png" alt="Suporte de celular para carro" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Suporte de Celular para Carro</h3>
+                    <p class="product-price">R$ 59,99</p>
+                    <p class="product-description">Mantenha seu celular seguro e visível enquanto dirige.</p>
+                </div>
+            </div>
+            <div class="product-card" data-category="smartwatches">
+                <img src="relogio/smatchatch.png" alt="Smartwatch infantil com GPS" width="250" height="200">
+                <div class="product-info">
+                    <h3 class="product-title">Smartwatch Infantil com GPS</h3>
+                    <p class="product-price">R$ 249,99</p>
+                    <p class="product-description">Segurança e diversão para as crianças com localização em tempo real.</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ls Importados. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+// Filtro de produtos
+const filterButtons = document.querySelectorAll('.filter-button');
+const productCards = document.querySelectorAll('.product-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        productCards.forEach(card => {
+            if (category === 'todos' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Animação de entrada para os cards de produto
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+productCards.forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(card);
+});
+
+// Simulação de paginação
+const paginationButtons = document.querySelectorAll('.pagination button');
+
+paginationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        paginationButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        // Aqui você pode adicionar lógica para carregar mais produtos ou mudar de página
+        alert('Mudança de página simulada. Em um cenário real, novos produtos seriam carregados aqui.');
+    });
+});
+</script>
+
+</body></html>

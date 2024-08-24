@@ -1,0 +1,255 @@
+<html><head><base href="sobre.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Sobre Nós - Ls Importados</title>
+<style>
+    :root {
+        --primary-color: #4CAF50;
+        --secondary-color: #333;
+        --background-color: #f4f4f4;
+        --text-color: #333;
+    }
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+    header {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+    nav {
+        background-color: #444;
+        padding: 0.5em;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 1em;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: var(--primary-color);
+    }
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    .about-section {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 2em;
+        margin-bottom: 2em;
+    }
+    .about-section h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+    }
+    .timeline {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: var(--primary-color);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    .timeline-item {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid var(--primary-color);
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .left {
+        left: 0;
+    }
+    .right {
+        left: 50%;
+    }
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid var(--primary-color);
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent var(--primary-color);
+    }
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid var(--primary-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--primary-color) transparent transparent;
+    }
+    .right::after {
+        left: -16px;
+    }
+    .timeline-content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    footer {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Ls Importados</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="explorar-produto-pag1.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="about-section">
+            <h2>Sobre Nós</h2>
+            <p>A Ls Importados nasceu da paixão por tecnologia e da necessidade de oferecer acessórios eletrônicos de alta qualidade a preços acessíveis. Desde 2010, temos nos dedicado a selecionar os melhores produtos do mercado e a proporcionar uma experiência de compra excepcional para nossos clientes.</p>
+            <p>Nossa missão é simplificar e aprimorar a vida digital das pessoas, fornecendo acessórios que combinam funcionalidade, durabilidade e estilo. Acreditamos que a tecnologia deve ser acessível a todos, e trabalhamos incansavelmente para tornar isso uma realidade.</p>
+        </section>
+        
+        <section class="about-section">
+            <h2>Nossa História</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <p>Fundação da Ls Importados na feira coberta de Planaltina Go.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2021</h3>
+                        <p>Produtos de ótima qualidade.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2024</h3>
+                        <p>Lançamento de acessórios para telefones mobile.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2024</h3>
+                        <p>Visando o futuro para alcaçar mais clientes .</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2024</h3>
+                        <p>Lançamento do nosso programa de fidelidade Seguro de Serviços.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-section">
+            <h2>Nossos Valores</h2>
+            <ul>
+                <li><strong>Qualidade:</strong> Oferecemos apenas produtos testados e aprovados pela nossa equipe.</li>
+                <li><strong>Inovação:</strong> Estamos sempre em busca das últimas tendências em tecnologia.</li>
+                <li><strong>Atendimento ao Cliente:</strong> Priorizamos a satisfação dos nossos clientes em todas as etapas.</li>
+                <li><strong>Sustentabilidade:</strong> Comprometidos com práticas eco-friendly e embalagens recicláveis.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ls Importados. Todos os direitos reservados.</p>
+    </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const sections = document.querySelectorAll('.about-section');
+    sections.forEach(section => {
+        section.style.opacity = 0;
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(section);
+    });
+
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach(item => {
+        item.style.opacity = 0;
+        item.style.transform = item.classList.contains('left') ? 'translateX(-20px)' : 'translateX(20px)';
+        item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(item);
+    });
+});
+</script>
+
+</body></html>
