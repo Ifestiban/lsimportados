@@ -1,0 +1,238 @@
+<html><head><base href="index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAcessórios - Sua Loja de Acessórios Eletrônicos</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #333;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .hero {
+            background-image: url('https://example.com/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4em 2em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 1em;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+        .featured-products {
+            margin-bottom: 2em;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2em;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 1em;
+        }
+        .product-info h3 {
+            margin: 0 0 0.5em;
+            font-size: 1.1em;
+        }
+        .product-info p {
+            margin: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .categories {
+            margin-bottom: 2em;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1em;
+        }
+        .category-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        .category-card img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 0.5em;
+        }
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>TechAcessórios</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Home</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="hero">
+                <h2>Acessórios de Última Geração</h2>
+                <p>Descubra a melhor seleção de acessórios eletrônicos para turbinar seus dispositivos.</p>
+                <a href="https://acessorios-eletronicos.com/produtos" class="cta-button">Ver Produtos</a>
+            </section>
+    
+            <section class="featured-products">
+                <h2>Produtos em Destaque</h2>
+                <div class="product-grid" id="featured-products">
+                    <!-- Produtos em destaque serão inseridos aqui dinamicamente -->
+                </div>
+            </section>
+    
+            <section class="categories">
+                <h2>Categorias</h2>
+                <div class="category-grid">
+                    <a href="https://acessorios-eletronicos.com/categoria/carregadores" class="category-card">
+                        <img src="https://example.com/icon-charger.svg" alt="Ícone de carregador" width="64" height="64">
+                        <h3>Carregadores</h3>
+                    </a>
+                    <a href="https://acessorios-eletronicos.com/categoria/fones" class="category-card">
+                        <img src="https://example.com/icon-headphones.svg" alt="Ícone de fones de ouvido" width="64" height="64">
+                        <h3>Fones de Ouvido</h3>
+                    </a>
+                    <a href="https://acessorios-eletronicos.com/categoria/capas" class="category-card">
+                        <img src="https://example.com/icon-case.svg" alt="Ícone de capa de celular" width="64" height="64">
+                        <h3>Capas e Cases</h3>
+                    </a>
+                    <a href="https://acessorios-eletronicos.com/categoria/cabos" class="category-card">
+                        <img src="https://example.com/icon-cable.svg" alt="Ícone de cabo" width="64" height="64">
+                        <h3>Cabos e Adaptadores</h3>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 TechAcessórios. Todos os direitos reservados.</p>
+        </footer>
+    
+    <script>
+    const featuredProducts = [
+        { id: 1, name: "Carregador Sem Fio 15W", price: 129.90, image: "https://example.com/carregador-sem-fio.jpg" },
+        { id: 2, name: "Fone Bluetooth TWS", price: 199.90, image: "https://example.com/fone-bluetooth.jpg" },
+        { id: 3, name: "Power Bank 20000mAh", price: 179.90, image: "https://example.com/powerbank.jpg" },
+        { id: 4, name: "Suporte Veicular para Celular", price: 59.90, image: "https://example.com/suporte-celular.jpg" }
+    ];
+    
+    function renderFeaturedProducts() {
+        const productGrid = document.getElementById('featured-products');
+        featuredProducts.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" width="250" height="200">
+                <div class="product-info">
+                    <h3>${product.name}</h3>
+                    <p>R$ ${product.price.toFixed(2)}</p>
+                </div>
+            `;
+            productCard.addEventListener('click', () => {
+                window.location.href = `https://acessorios-eletronicos.com/produto/${product.id}`;
+            });
+            productGrid.appendChild(productCard);
+        });
+    }
+    
+    // Inicializar a página com os produtos em destaque
+    renderFeaturedProducts();
+    </script>
+    
+    </body></html>
